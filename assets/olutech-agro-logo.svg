@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="160" viewBox="0 0 640 160" role="img" aria-labelledby="title desc">
+  <title id="title">Olutech Agro Limited</title>
+  <desc id="desc">OA mark with Olutech Agro wordmark and Agro Export descriptor.</desc>
+  <rect width="640" height="160" fill="#fbf7ef"/>
+  <rect x="32" y="32" width="96" height="96" rx="8" fill="#0f3d2a"/>
+  <rect x="32.5" y="32.5" width="95" height="95" rx="7.5" fill="none" stroke="#d8a84b"/>
+  <text x="80" y="91" text-anchor="middle" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="32" font-weight="900" letter-spacing="3">OA</text>
+  <text x="158" y="77" fill="#0f3d2a" font-family="Inter, Arial, sans-serif" font-size="38" font-weight="900">Olutech Agro</text>
+  <text x="160" y="110" fill="#6f7d73" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="800" letter-spacing="5">AGRO EXPORT</text>
+</svg>
