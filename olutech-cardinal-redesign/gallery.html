@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | Olutech Agro Limited</title>
+  <meta name="description" content="Olutech Agro field, sourcing, processing, packaging and export operations gallery.">
+  <meta name="theme-color" content="#0f3d2a">
+  <link rel="stylesheet" href="main.css">
+  <style>
+    .gallery-page-section { background: #fbf7ef; }
+    .gallery-toolbar { max-width: 860px; margin-bottom: 2.5rem; }
+    .gallery-toolbar p:last-child { color: var(--text, #405148); font-size: 1.05rem; }
+    .gallery-group { margin-top: 3.5rem; }
+    .gallery-group:first-of-type { margin-top: 0; }
+    .gallery-group-head { display:flex; align-items:end; justify-content:space-between; gap:1.5rem; margin-bottom:1.15rem; padding-bottom:.9rem; border-bottom:1px solid rgba(20,35,27,.14); }
+    .gallery-group-head h2 { margin:0; font-size:clamp(1.55rem,3vw,2.35rem); color:#0f3d2a; }
+    .gallery-group-head p { max-width:560px; color:#6f7d73; }
+    .gallery-grid-organized { display:grid; grid-template-columns:repeat(12,minmax(0,1fr)); gap:1rem; }
+    .gallery-card { position:relative; overflow:hidden; margin:0; background:#fff; border:1px solid rgba(20,35,27,.12); border-radius:12px; box-shadow:0 12px 30px rgba(20,35,27,.08); min-height:280px; }
+    .gallery-card img { width:100%; height:100%; min-height:280px; object-fit:cover; display:block; transition:transform .35s ease; }
+    .gallery-card:hover img { transform:scale(1.025); }
+    .gallery-card figcaption { position:absolute; left:0; right:0; bottom:0; padding:1.1rem 1rem .9rem; color:#fff; font-weight:800; background:linear-gradient(transparent,rgba(7,20,14,.82)); }
+    .gallery-card--hero { grid-column:span 8; min-height:440px; }
+    .gallery-card--hero img { min-height:440px; }
+    .gallery-card--tall { grid-column:span 4; min-height:440px; }
+    .gallery-card--tall img { min-height:440px; }
+    .gallery-card--half { grid-column:span 6; min-height:340px; }
+    .gallery-card--half img { min-height:340px; }
+    .gallery-card--third { grid-column:span 4; min-height:300px; }
+    .gallery-card--third img { min-height:300px; }
+    .gallery-card--placeholder { grid-column:span 6; min-height:260px; display:grid; place-items:center; background:linear-gradient(145deg,#f6efe1,#fff); }
+    .gallery-card--placeholder .frame-placeholder { min-height:260px; width:100%; display:grid; place-items:center; align-content:center; gap:.4rem; text-align:center; color:#405148; }
+    .gallery-card--placeholder .frame-placeholder span { width:46px; height:46px; display:grid; place-items:center; border-radius:50%; background:#0f3d2a; color:#fff; font-weight:900; }
+    .gallery-card--placeholder .frame-placeholder strong { color:#0f3d2a; }
+    .gallery-card--placeholder figcaption { position:static; color:#0f3d2a; background:none; text-align:center; padding:.85rem; border-top:1px solid rgba(20,35,27,.1); width:100%; }
+    @media (max-width: 900px) {
+      .gallery-group-head { align-items:start; flex-direction:column; gap:.55rem; }
+      .gallery-card--hero,.gallery-card--tall,.gallery-card--half,.gallery-card--third,.gallery-card--placeholder { grid-column:span 6; min-height:300px; }
+      .gallery-card--hero img,.gallery-card--tall img,.gallery-card--half img,.gallery-card--third img { min-height:300px; }
+    }
+    @media (max-width: 640px) {
+      .gallery-grid-organized { grid-template-columns:1fr; }
+      .gallery-card--hero,.gallery-card--tall,.gallery-card--half,.gallery-card--third,.gallery-card--placeholder { grid-column:auto; min-height:260px; }
+      .gallery-card--hero img,.gallery-card--tall img,.gallery-card--half img,.gallery-card--third img { min-height:260px; }
+    }
+  </style>
+</head>
+<body id="top">
+  <header class="site-header" data-nav>
+    <div class="container nav-shell">
+      <a class="brand" href="index.html" aria-label="Olutech Agro home"><img class="brand-logo" src="assets/olutech-agro-logo.jpg" alt="Olutech Agro logo"><span class="brand-copy"><span class="brand-name">Olutech Agro</span><span class="brand-descriptor">Commodity Export &amp; Supply</span></span></a>
+      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-navigation" data-nav-toggle><span></span><span></span><span></span></button>
+      <nav class="nav-links" id="site-navigation" data-nav-links aria-label="Primary navigation"><a href="index.html#home">Home</a><a href="index.html#about">About</a><a href="products.html">Products</a><a href="index.html#services">Services</a><a href="index.html#quality">Quality</a><a class="active" href="gallery.html">Gallery</a><a class="nav-cta" href="index.html#quote">Request Quote</a></nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero gallery-hero">
+      <div class="container page-hero-grid reveal">
+        <div><p class="eyebrow eyebrow-light">Gallery</p><h1>Field work, preparation, logistics and export moments.</h1></div>
+        <p>A visual record of Olutech Agro's sourcing, preparation, commodity handling, inland logistics and export activities.</p>
+      </div>
+    </section>
+
+    <section class="section gallery-page-section">
+      <div class="container gallery-toolbar reveal">
+        <p class="eyebrow">Media Library</p>
+        <p>The gallery is grouped by activity so buyers can quickly understand the journey from commodity sourcing and preparation to inland movement and export loading.</p>
+      </div>
+
+      <div class="container gallery-group">
+        <div class="gallery-group-head reveal">
+          <h2>01 —  Commodities</h2>
+          <p> commodity and product imagery representing the supply side of Olutech Agro's operations.</p>
+        </div>
+        <div class="gallery-grid-organized">
+
+          <figure class="gallery-card gallery-card--tall reveal"><img src="assets/generated/stone-flower.jpg" loading="lazy" alt="Stone Flower Kalpasi botanical commodity"><figcaption>Stone Flower (Kalpasi)</figcaption></figure>
+          <figure class="gallery-card gallery-card--tall reveal"><img src=C:\Users\idris\Downloads\Olutech_Agro_Cardinal_Torch_Redesign_v3_Images\olutech-cardinal-redesign\assets\products\IMG_0541.HEIC loading="lazy" alt="Stone Flower Kalpasi botanical commodity"><figcaption>Stone Flower (Kalpasi)</figcaption></figure>
+
+        </div>
+      </div>
+
+      <div class="container gallery-group">
+        <div class="gallery-group-head reveal">
+          <h2>02 — Preparation &amp; Container Work</h2>
+          <p>Bagging, container dressing and loading activities carried out before cargo movement.</p>
+        </div>
+        <div class="gallery-grid-organized">
+          <figure class="gallery-card gallery-card--half reveal"><img src="assets/products/35e4a849-e885-4251-ba0d-7d9f4866ea9d.jpg" loading="lazy" alt="Filled export bags stacked during preparation"><figcaption></figcaption></figure>
+          <figure class="gallery-card gallery-card--half reveal"><img src="assets/products/be36daa1-7364-415c-8927-5a34214f5199.jpg" loading="lazy" alt="Container interior being dressed for cargo"><figcaption></figcaption></figure>
+          <figure class="gallery-card gallery-card--hero reveal"><img src="assets/products/3e9a791f-a6ed-43ee-b4f0-05c76c7f29be.jpg" loading="lazy" alt="White commodity bags being loaded inside a container"><figcaption></figcaption></figure>
+        </div>
+      </div>
+
+      <div class="container gallery-group">
+        <div class="gallery-group-head reveal">
+          <h2>03 — Inland Logistics &amp; Export Movement</h2>
+          <p>Truck movement and inland transport supporting the journey from sourcing locations to the export corridor.</p>
+        </div>
+        <div class="gallery-grid-organized">
+          <figure class="gallery-card gallery-card--hero reveal"><img src="assets/products/5499ea83-4aa9-4ac2-b967-10023270b1bd.jpg" loading="lazy" alt="Cargo truck transporting agricultural commodities"><figcaption></figcaption></figure>
+          <figure class="gallery-card gallery-card--placeholder reveal"><div class="frame-placeholder"><span>+</span><strong>Export terminal / port</strong><small>Reserved for additional Olutech photo</small></div><figcaption>Export movement</figcaption></figure>
+        </div>
+      </div>
+
+      <div class="container gallery-group">
+        <div class="gallery-group-head reveal">
+          <h2>04 — Documentation &amp; Partnerships</h2>
+          <p>Reserved spaces for verified company documentation, inspection moments and buyer or partner engagement.</p>
+        </div>
+        <div class="gallery-grid-organized">
+          <figure class="gallery-card gallery-card--placeholder reveal"><div class="frame-placeholder"><span>+</span><strong>Documentation / verification</strong><small>Reserved for Olutech photo</small></div><figcaption>Export documentation</figcaption></figure>
+          <figure class="gallery-card gallery-card--placeholder reveal"><div class="frame-placeholder"><span>+</span><strong>Team / buyer engagement</strong><small>Reserved for Olutech photo</small></div><figcaption>People &amp; partnerships</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="buyer-strip"><div class="container buyer-grid reveal"><div><p class="eyebrow eyebrow-light">Work with Olutech Agro</p><h2>Need product information or a formal supply quote?</h2></div><p>Send the commodity, grade, quantity, packaging requirement, destination and expected shipment window for a more useful response.</p><a class="btn btn-gold" href="index.html#quote">Request Quote</a></div></section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-top"><div class="footer-brand-block"><img src="assets/olutech-agro-logo.jpg" alt="Olutech Agro logo"><div><strong>Olutech Agro Limited</strong><span>Nigerian agro commodities for global markets.</span></div></div><a class="footer-email" href="mailto:admin@olutechagrocom">admin@olutechagro.com</a></div>
+    <div class="container footer-grid"><div><span class="footer-label">Company</span><a href="index.html#about">About</a><a href="index.html#services">Services</a><a href="gallery.html">Gallery</a></div><div><span class="footer-label">Trade</span><a href="products.html">Products</a><a href="index.html#quality">Quality</a><a href="index.html#process">Export Process</a></div><div><span class="footer-label">Contact</span><a href="tel:+2348023322276">+2348023322276</a><a href="tel:+14697745558">+14697745558</a><a href="index.html#quote">Request Quote</a></div></div>
+    <div class="container footer-bottom"><span>&copy; 2026 Olutech Agro Limited. All rights reserved.</span><a href="#top">Back to top ↑</a></div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>
